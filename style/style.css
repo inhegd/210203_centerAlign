@@ -1,0 +1,40 @@
+@charset "utf-8";
+div{
+	border: 1px solid #000;
+}
+span{
+	border: 1px solid #f80;
+}
+
+div#rowAlign {
+	text-align: center;
+}
+
+/*span {
+	text-align: center;
+}  -> (X)  폭 자체가 없어서 가운데 정렬이 안됨*/
+
+hr{
+	margin: 30px;
+}
+/*-------------------------------------*/
+div#colAlign>span{
+	width: 300px;
+	height: 200px;
+	/*vertical-align: middle; 이 방식은 안됨 (X)*/
+
+}
+
+div#colAlign>span{
+	line-height: 200; /*한줄일때만 가능한 적용방법*/
+}
+
+/* 높이 200 - 줄간격 10 -> 182
+	182를 반으로 나눈 값을 패딩 탑으로 설정 */
+
+div#colAlign{
+	box-sizing: border-box;
+	width: 300px;
+	height: 200px;
+	padding-top: 91px;
+}
