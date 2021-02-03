@@ -38,3 +38,19 @@ div#colAlign{
 	height: 200px;
 	padding-top: 91px;
 }
+
+/*-----------------정중앙-------------*/
+
+div#center{
+	width: 200px;
+	height: 200px;
+	position: relative;
+
+}
+
+div#center>span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%)
+}
